@@ -108,9 +108,72 @@ main .gallery .name {
 }
 
 main .people #loud {
-    color: green;
+    color: rgb(45, 211, 39);
 }
 
+/* *** footer *** */
+
+footer {
+    height: 60px;
+    background-color: #212324;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .audio-video > i {
+    color: white;
+    font-size: 25px;
+}
+
+footer .audio-video,
+footer .toolbar,
+footer .exit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.toolbar {
+    flex-basis: 60%;
+    /* flex-grow: 1; */
+}
+
+.icon  {
+    color: #dcdcdc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > i {
+    color: white;
+    font-size: 25px;
+}
+
+.icon.chevron {
+    font-size: 15px;
+}
+
+.toolbar {
+    flex-basis: 60%;
+    /* flex-grow: 1; */
+}
+
+.icon #share-screen {
+    color: #4bc800;
+}
+
+footer .exit {
+    background-color: #4a4b4d;
+}
+
+footer .exit .end {
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+}
 /* *** debug *** */
 /* .debug header {
     background-color: red;
@@ -130,17 +193,34 @@ main .people #loud {
     background-color: lightpink;
 } */
 
-.debug ul {
+/* .debug ul {
     width: 100%;
     height: 100%;
-    /* background-color: yellow; */
-}
+    background-color: yellow;
+} */
 
 /* .debug li {
     background-color: lightseagreen;
 } */
 
-.debug footer {
-    height: 60px;
+/* .debug footer {
     background-color: red;
-}
+} */
+
+/* .debug .audio-video {
+    width: 20%;
+    height: 100%;
+    background-color: rosybrown;
+} */
+
+/* .debug .toolbar {
+    width: 40%;
+    height: 100%;
+    background-color: sandybrown;
+} */
+
+/* .debug .exit {
+    width: 15%;
+    height: 100%;
+    background-color: sienna;
+} */
