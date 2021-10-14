@@ -88,6 +88,29 @@ main ul li {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+main .gallery .people {
+    position: relative;
+}
+
+main .gallery .name {
+    width: 50%;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.name > i {
+    color: red;
+}
+
+main .people #loud {
+    color: green;
+}
+
 /* *** debug *** */
 /* .debug header {
     background-color: red;
