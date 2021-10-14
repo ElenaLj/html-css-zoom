@@ -1,4 +1,5 @@
 /* *** commons *** */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +11,17 @@ body {
     background-color: black;
 }
 
+.speaker-view:hover, 
+.full-screen:hover,
+.icon:hover,
+.end:hover {
+    cursor: pointer ;
+}
+
 /* *** header *** */
+
 header {
     height: 50px;
-    /* padding-right: 5px; */
     display: flex;   
     justify-content: flex-end;
     align-items: center;
@@ -21,31 +29,24 @@ header {
 
 header .speaker-view,
 header .full-screen {
-    /* width: 15%; */
+    color: white;
+    font-size: 18px;
     margin-right: 5px;
     padding: 8px 10px;
-    font-size: 18px;
-    color: white;
     background: linear-gradient(#393939, #262626);
     border: none;
     border-radius: 5px;
 }
 
-.speaker-view:hover, 
-.full-screen:hover {
-    cursor: pointer ;
-}
-
 /* *** main *** */
 
 main {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 160px);
     display: flex;
     justify-content: center;
 }
 
 main .page {
-    width: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,8 +69,7 @@ main .page {
 
 main .gallery {
     width: 90%;
-    margin: 10px;
-    /* display: flex; */
+    margin: 10px 30px;
 }
 
  main ul {
@@ -115,14 +115,10 @@ main .people #loud {
 
 footer {
     height: 60px;
+    margin-top: 50px;
     background-color: #212324;
     display: flex;
     justify-content: space-between;
-}
-
-footer .audio-video > i {
-    color: white;
-    font-size: 25px;
 }
 
 footer .audio-video,
@@ -133,13 +129,9 @@ footer .exit {
     align-items: center;
 }
 
-.toolbar {
-    flex-basis: 60%;
-    /* flex-grow: 1; */
-}
-
 .icon  {
     color: #dcdcdc;
+    font-size: 30px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -147,9 +139,8 @@ footer .exit {
     align-items: center;
 }
 
-.icon > i {
-    color: white;
-    font-size: 25px;
+.icon > span {
+    font-size: 15px;
 }
 
 .icon.chevron {
@@ -174,7 +165,9 @@ footer .exit .end {
     color: red;
     padding: 10px;
 }
+
 /* *** debug *** */
+
 /* .debug header {
     background-color: red;
 } */
