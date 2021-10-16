@@ -125,7 +125,7 @@ footer .audio-video,
 footer .toolbar,
 footer .exit {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -148,8 +148,8 @@ footer .exit {
 }
 
 .toolbar {
-    flex-basis: 60%;
-    /* flex-grow: 1; */
+    /* flex-basis: 60%; */
+    flex-grow: 1;
 }
 
 .icon #share-screen {
